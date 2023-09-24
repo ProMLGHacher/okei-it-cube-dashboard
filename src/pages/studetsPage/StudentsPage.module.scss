@@ -1,0 +1,127 @@
+.main {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-inline: 20px;
+    padding-bottom: 0px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+.submit {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+
+    cursor: pointer;
+
+    padding: 20px;
+    border: none;
+    background-color: #965D62;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #965D62CC;
+    }
+
+}
+
+.student {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    flex: 1;
+    width: 100%;
+    padding: 20px;
+
+    background-color: #FFFFFF22;
+    border-radius: 17px;
+}
+
+.groupName {
+    width: 100%;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-end-start-radius: 30px;
+    border-end-end-radius: 30px;
+    border-bottom: 1px solid #D9D9D999;
+    border-left: 1px solid #D9D9D999;
+    border-right: 1px solid #D9D9D999;
+}
+
+.student_data_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.student_data {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.title {
+    font-size: 12px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.button {
+    background-color: white;
+    border-radius: 71px;
+    border: none;
+    padding-block: 10px;
+    padding-inline: 28px;
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #FFFFFFAA;
+    }
+
+}
+
+.reason {
+    flex: 1;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    height: 100%;
+    min-height: 100px;
+    color: white;
+}
