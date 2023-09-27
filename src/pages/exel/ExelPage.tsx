@@ -32,7 +32,7 @@ export default function ExelPage() {
 
   return (
     <div className={styles.main}>
-      <input type="file" accept='.xls' onChange={onChange} />
+      <input type="file" className={styles.file} accept='.xls' onChange={onChange} />
     </div>
   )
 }

@@ -61,6 +61,7 @@ export const studentsSlice = createSlice({
 
             const index = state.value?.findIndex(item => item.id === action.meta.arg)
             state.value[index].isExcluded = true
+            state.saved = false
         })
 
         builder.addCase(createStatementThunk.fulfilled, (state, action) => {
@@ -108,7 +109,7 @@ export const createStatementThunk = createAsyncThunk<AxiosResponse, undefined, T
                 if (!item.wasPresent) {
                     return {
                         "studentId": item.id,
-                        "reason": item.reason ? item.reason : ''
+                        "reason": item.reason ? item.reason : '+'
                     }
                 }
             }).filter((item) => {

@@ -94,7 +94,7 @@ export const StudentsPage = () => {
                     padding: '20px'
                 }} />
             </div>
-            <button disabled={saved} className={styles.submit} onClick={submitHandler} >Сохранить</button>
+            <button disabled={saved} className={`${styles.submit} ${saved && styles.disabled_button}`} onClick={submitHandler} >Сохранить</button>
         </div>
     )
 }
